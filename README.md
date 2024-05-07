@@ -29,7 +29,7 @@ To get started with this project, follow these steps:
 1. Clone this repository to your local machine. You can use the following command:
 
    ```bash
-   git clone https://github.com/thamir0022/Mern-Blog-App.git
+   git clone https://github.com/Siya0022/Mern-Blog-App.git
 
 2. Change Directory
 
@@ -58,3 +58,14 @@ We welcome contributions from the community! If you'd like to contribute to this
 Let's make this project even more entertaining and adhere to the highest standards! 🌟
 
 Happy Coding🚀
+
+# Instructions by me
+ # setting up environment
+  # frontend setup
+  in terminal> cd client>npm run dev
+  # backend setup
+  in terminal > cd ap
+
+  admin
+  admin123
+  mongodb+srv://admin:admin123@development.neaqtzt.mongodb.net/?retryWrites=true&w=majority&appName=development

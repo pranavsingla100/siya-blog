@@ -17,7 +17,6 @@ import useDocumentTitle from '../components/useDocumentTitle'
 
 export default function CreatePost() {
   useDocumentTitle("Create Post");
-  useDocu
   const [file, setFile] = useState(null);
   const [imageUploadProgress, setImageUploadProgress] = useState(null);
   const [imageUploadError, setImageUploadError] = useState(null);

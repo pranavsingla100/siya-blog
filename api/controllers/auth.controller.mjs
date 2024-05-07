@@ -44,7 +44,7 @@ export const signup = async (req, res, next) => {
 export const signin = async (req, res, next) => {
   const { email, password } = req.body;
   if (!email || !password || email === "" || password === "") {
-    next(errorHandler(400, "All fiels are required"));
+    next(errorHandler(400, "All fields are required"));
   }
 
   try {
@@ -57,7 +57,7 @@ export const signin = async (req, res, next) => {
       return next(errorHandler(400, "Invalid username or password"));
     }
 
-    const token = jwt.sign({ id: validuser._id, isAdmin: validuser.isAdmin }, process.env.JWT_SECRET);
+    const token = jwt.sign({ id: validuser._id, isAdmin: validuser.isAdmin }, "javainuse-secret-key");
     const { password: pass, ...rest } = validuser._doc;
 
     res

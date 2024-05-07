@@ -7,11 +7,13 @@ import postRoutes from './routes/post.route.mjs'
 import commentRoutes from './routes/comment.route.mjs'
 import cookieParser from "cookie-parser";
 import path from 'path';
-
+ 
 dotenv.config();
 
+const mongoURI = "mongodb+srv://admin:admin123@development.neaqtzt.mongodb.net/?retryWrites=true&w=majority&appName=development";
+
 mongoose
-  .connect(process.env.MONGO)
+  .connect(mongoURI)
   .then(() => {
     //process.env.MONGO is the mongodb link to the database
     console.log("MongoDB Database Connected");
@@ -32,8 +34,9 @@ app.listen(port, () => {
 const __dirname = path.resolve();
 
 app.use("/api/user", userRoutes);
-app.use("/api/auth", authRoutes);
-app.use("/api/post", postRoutes);
+//signup, signin checked Only google left
+app.use("/api/auth", authRoutes); //
+app.use("/api/post", postRoutes);//
 app.use("/api/comment", commentRoutes);
 
 app.use(express.static(path.join(__dirname, '/client/dist')));

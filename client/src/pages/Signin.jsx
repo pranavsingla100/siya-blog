@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Alert, Button, Label, Spinner, TextInput } from "flowbite-react";
 import { useDispatch, useSelector } from "react-redux";
@@ -49,7 +49,7 @@ export default function Signin() {
         <div className="flex-1">
           <Link to="/" className="font-bold dark:text-white text-4xl">
             <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
-              Thamir's
+              Siya's
             </span>
             Blog
           </Link>
@@ -85,7 +85,7 @@ export default function Signin() {
             <Button
               gradientDuoTone="purpleToPink"
               type="submit"
-              disabled={loading}
+              // disabled={loading}
             >
               {loading ? (
                 <>
@@ -100,7 +100,7 @@ export default function Signin() {
           </form>
 
           <div className="flex gap-2 text-sm mt-5">
-            <span>Don't have an account?</span>
+            <span>Do not have an account?</span>
             <Link to="/signup" className="text-blue-500">
               Sign Up
             </Link>

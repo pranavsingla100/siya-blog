@@ -13,7 +13,7 @@ export default function FooterCom() {
               className="self-center whitespace-nowrap text-lg sm:text-xl font-semibold dark:text-white"
             >
               <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
-                Thamir's
+                Siya's
               </span>
               Blog
             </Link>
@@ -43,14 +43,14 @@ export default function FooterCom() {
               <Footer.Title title="FOLLOW US" />
               <Footer.LinkGroup col>
                 <Footer.Link
-                  href="https://github.com/thamir0022"
+                  href="https://github.com/Siya0022"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Github
                 </Footer.Link>
                 <Footer.Link
-                  href="https://www.linkedin.com/in/thamirsiddik/"
+                  href="https://www.linkedin.com/in/Siya'Nagpal/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -78,7 +78,7 @@ export default function FooterCom() {
         </div>
         <Footer.Divider/>
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="#" by="Thamir's Blog" year={new Date().getFullYear()}/>
+          <Footer.Copyright href="#" by="Siya's Blog" year={new Date().getFullYear()}/>
           <div className="flex gap-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="#" icon={BsFacebook} />
             <Footer.Icon href="#" icon={BsInstagram} />
